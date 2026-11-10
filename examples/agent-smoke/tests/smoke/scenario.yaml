@@ -1,0 +1,20 @@
+apiVersion: dynamo/v1alpha1
+kind: Scenario
+name: reconciliation
+timeout: 30s
+steps:
+- id: create
+  create: {fixture: cronjob.yaml}
+- id: job
+  assert:
+    target: {apiVersion: batch/v1, kind: Job, namespace: default, matchLabels: {dynamo-test: declarative}}
+    count: 1
+    fields: [{pointer: /spec/template/metadata/labels/dynamo-test, equals: declarative}]
+    saveAs: job
+    timeout: 20s
+- id: status
+  assert:
+    target: {apiVersion: batch.tutorial.kubebuilder.io/v1, kind: CronJob, namespace: default, name: example}
+    count: 1
+    fields: [{pointer: /status/active/0/uid, equalsFrom: {observation: job, pointer: /metadata/uid}}]
+    timeout: 20s

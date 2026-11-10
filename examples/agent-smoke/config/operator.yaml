@@ -1,0 +1,13 @@
+apiVersion: dynamo/v1alpha1
+kind: OperatorConnection
+operator:
+  build:
+    context: ../operator-src
+    timeout: 2m
+  env:
+    ENABLE_WEBHOOKS: "false"
+api:
+  listen: 0.0.0.0:18089
+  advertiseURL: http://OPERATOR_REACHABLE_HOST:18089
+  crds: [../resources/cronjob.yaml]
+startupTimeout: 30s

@@ -1,0 +1,16 @@
+{
+  "transportDockerfile": "Dockerfile",
+  "preparationNs": 3048807,
+  "outcome": "completed",
+  "durationNs": 419183140,
+  "generatedControlPolicyArtifact": "operator-build-policy.txt",
+  "contextSHA256": "56fd9b191794aa4732814b9dcd8924a2728aeea492b753ceac28a40951f7e503",
+  "dockerfile": "Dockerfile",
+  "dockerfileSHA256": "3a1e3f774960bf0d50ff7ae3f2a05644d0c829363006b9b0441aa45f5f0ec40d",
+  "originalControlSHA256": {},
+  "generatedPolicySHA256": "47cb03dad00af67deb0ca61ec687329b8a60f959e0deebc00db352e9809734d7",
+  "tag": "dynamo-build:synthetic-fixture",
+  "imageID": "sha256:464c6422921a116c2c600c01caa356f092851c074204175488518ee8bf1f92e6",
+  "engineVersion": "29.6.2",
+  "profile": "Engine API1.47 classic version1"
+}

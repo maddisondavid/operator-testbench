@@ -1,0 +1,289 @@
+[
+  {
+    "source": "internal/app/connection_test.go",
+    "line": 26,
+    "class": "documentation-address",
+    "lineSHA256": "875cc865f09b0e82ecb52e8fffda33addd1cb783754013f25751f7bd83c39233",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/app/connection_test.go",
+    "line": 45,
+    "class": "documentation-address",
+    "lineSHA256": "6a1aa501d2babe7d0cbb5cb983f5f8d1c1c2b479ac3e8535b94e846f537a0395",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/cli/progress_test.go",
+    "line": 373,
+    "class": "documentation-address",
+    "lineSHA256": "ced98368c21c4fccde825a6fec749e2fc278024f2ea0ad49a710d598dbe9e980",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/cli/progress_test.go",
+    "line": 386,
+    "class": "documentation-address",
+    "lineSHA256": "c3d35f422a486caa24d6b9af67c9c2ec8fa49c82031a17669efc39f66b22e7a8",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/cli/progress_test.go",
+    "line": 393,
+    "class": "documentation-address",
+    "lineSHA256": "3772bc201bd44eaaad3ef1b140ba25259c72ca19200040a10540b4dfa279a78d",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/uiaddress/address_test.go",
+    "line": 6,
+    "class": "documentation-address",
+    "lineSHA256": "7faa083b62914cb96d68bcc78907f1c2f56f9132eb591d2f2fb0cfc109b9215d",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 34,
+    "class": "documentation-address",
+    "lineSHA256": "a7276a2d12efdbff43fb6c892cbbfe24b40b4f2c666b8f1a55248892495830d7",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 71,
+    "class": "documentation-address",
+    "lineSHA256": "003e289bf00c4d8b7e36923b9be5e3ce6856cdcd58d48026b4048d087041c620",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 72,
+    "class": "documentation-address",
+    "lineSHA256": "7910dd3cf81fca30a46f5737c7d38df856e9f076a410b36ed4a8422a5eff390e",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 117,
+    "class": "documentation-address",
+    "lineSHA256": "6ad3c0c3326545cd84a8778ce01c21f34025186aece0bee06cb77bf9536f74a5",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 154,
+    "class": "documentation-address",
+    "lineSHA256": "003e289bf00c4d8b7e36923b9be5e3ce6856cdcd58d48026b4048d087041c620",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 155,
+    "class": "documentation-address",
+    "lineSHA256": "7910dd3cf81fca30a46f5737c7d38df856e9f076a410b36ed4a8422a5eff390e",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 177,
+    "class": "documentation-address",
+    "lineSHA256": "7cc02c2019f5008b9e0798ae54ee1785c6d48f4e82993de76f986d018a78d2ee",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 178,
+    "class": "documentation-address",
+    "lineSHA256": "e3d31c8fab3e71f5ba037b8e9519d640989da1cf36faafd35053c8b86026ef92",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 179,
+    "class": "documentation-address",
+    "lineSHA256": "6643ae56825ebb8b94a75fc081eae085e5414e6af248f25faffb3e50c4677c4b",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 180,
+    "class": "documentation-address",
+    "lineSHA256": "e79940999e7918d58447c18542399fea58a222953c9a7acbf9c2c5240877c0a6",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 181,
+    "class": "documentation-address",
+    "lineSHA256": "3fc66f5e02c97ef0d044e5bf93fad44918e1760a74cd18588dcb4eb92668e3f6",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/commands_test.go",
+    "line": 182,
+    "class": "documentation-address",
+    "lineSHA256": "2b4ecf139a1c2a6a3e86de9449ac4d1f31d79b841c8cda9f04100ce2181dfd8b",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 40,
+    "class": "documentation-address",
+    "lineSHA256": "601e5710095b36aaddfc47d1da70127b03554e7ae5a0c6aab1a44dbe2397388c",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 41,
+    "class": "documentation-address",
+    "lineSHA256": "a3aff7df655876fcb8019d888b57fa2e93b1429b74f16409faaddd3d68291c3d",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 52,
+    "class": "documentation-address",
+    "lineSHA256": "b0ffb8d38c9fb78f836fbd87e242142dbf3ca44194d0577250e32450fc862708",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 53,
+    "class": "documentation-address",
+    "lineSHA256": "42b2cb45215d3af5fa02186347787d91bba76a9f994b155487a46ce6122e5b78",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 83,
+    "class": "documentation-address",
+    "lineSHA256": "b8ed7e4e0f738b5730d54a3ec9b7e35db0ddeacd99963221ace181702d25369f",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 105,
+    "class": "documentation-address",
+    "lineSHA256": "b3757193c19ed9fc2825a94d75329a5c0b1cb1ecb84d6f280306420ba83c779c",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 133,
+    "class": "documentation-address",
+    "lineSHA256": "b60524ca4b3c4bf4592f83a107350a2a1d80c3950d63e20462cefa1c89dc3b08",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 160,
+    "class": "documentation-address",
+    "lineSHA256": "549788ee08ac9ef923d14d650fa0a1a9247888fdae8e2af3eaf19142f69e5f0b",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 169,
+    "class": "documentation-address",
+    "lineSHA256": "9f93b54fe6bf54f06a5fb4943dcd9a4af1c61f7a2f6a9f871a6f31b9b2b6ccb9",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 225,
+    "class": "documentation-address",
+    "lineSHA256": "12c2011f98334d4cd57054300e8717be4866e5af8571560bffa7aa40b1d7e23b",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/http_test.go",
+    "line": 253,
+    "class": "documentation-address",
+    "lineSHA256": "6a0144fa4c0496c45ec342d2040f0adb1f7446eb49378241cd18ea9ab37ab523",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/ingress_test.go",
+    "line": 29,
+    "class": "documentation-address",
+    "lineSHA256": "4b7307cbe6f76b51b016a7882ec1dff718cdf2d7089b7ad2fc3bb1758a1a5d39",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "internal/workbench/report_union_test.go",
+    "line": 58,
+    "class": "documentation-address",
+    "lineSHA256": "82cce049af68233b3fb93098d976e2629b54fb92e4be5a0a3918a5d488058acc",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "scripts/source-safety.py",
+    "line": 55,
+    "class": "documentation-address",
+    "lineSHA256": "23faf7529fc49a50c232294ff6df14f16ab9c343e24dfdd3765e065da5d04c83",
+    "reason": "Exact scanner classification of documentation networks; these are not executable endpoint defaults."
+  },
+  {
+    "source": "test/agent-smoke/configure_test.go",
+    "line": 17,
+    "class": "documentation-address",
+    "lineSHA256": "60a3001e470126e306ea284a1fad37ef45f6e2166db13be82c8cfdeee72d9daa",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "test/agent-smoke/configure_test.go",
+    "line": 28,
+    "class": "documentation-address",
+    "lineSHA256": "40784a51ad4310334933e3f633bc2f94b622aaea1db84a2719714c47cf64dfba",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "test/agent-smoke/configure_test.go",
+    "line": 30,
+    "class": "documentation-address",
+    "lineSHA256": "5e83840a2acff071b1ce9227e8e4274ff2dd96a3f1fca734348f7d8a521a3101",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "test/agent-smoke/configure_test.go",
+    "line": 39,
+    "class": "documentation-address",
+    "lineSHA256": "f973894aae00b4dbb7230fe9c26d8db03b9ead08c4c0f4a9dc0ee3a19a098de5",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "test/agent-smoke/portability_test.py",
+    "line": 11,
+    "class": "address",
+    "lineSHA256": "4fcbbf2b47e521d3e74f0101a31bf1462169ad20a45622a855036f0ff0a6b051",
+    "reason": "Non-network endpoint-validation unit input: multicast and broadcast addresses must reject. Exact line/context only; no executable default."
+  },
+  {
+    "source": "test/agent-smoke/portability_test.py",
+    "line": 11,
+    "class": "documentation-address",
+    "lineSHA256": "4fcbbf2b47e521d3e74f0101a31bf1462169ad20a45622a855036f0ff0a6b051",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "test/agent-smoke/portability_test.py",
+    "line": 13,
+    "class": "documentation-address",
+    "lineSHA256": "1a22840e490cbc3646ef4e68c03ba486ccf6be447f63dff918422a0f722d03a0",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "test/agent-smoke/wrapper_test.py",
+    "line": 42,
+    "class": "documentation-address",
+    "lineSHA256": "4f80880606d4ff36673be80a1c2b8e43a5de2a5113fe394bca33c35ec933e193",
+    "reason": "Reserved documentation address in non-network unit input/mock; never a deployment default."
+  },
+  {
+    "source": "test/publication/audit_test.py",
+    "line": 18,
+    "class": "address",
+    "lineSHA256": "bc7912536c21d65d356ddfeabb757236228f176999078c49cac53e704f5051d6",
+    "reason": "Synthetic rejection test concatenates an intentionally invalid credential/address input; never an executable endpoint default or credential."
+  }
+]

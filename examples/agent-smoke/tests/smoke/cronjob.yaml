@@ -1,0 +1,14 @@
+apiVersion: batch.tutorial.kubebuilder.io/v1
+kind: CronJob
+metadata: {name: example, namespace: default}
+spec:
+  schedule: "@every 1s"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    metadata: {labels: {dynamo-test: declarative}}
+    spec:
+      template:
+        metadata: {labels: {dynamo-test: declarative}}
+        spec:
+          restartPolicy: Never
+          containers: [{name: placeholder, image: example.invalid/not-executed:fixture}]

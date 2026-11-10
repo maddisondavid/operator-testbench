@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dynamo TestRunReport v1alpha1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "apiVersion",
+    "kind",
+    "runId",
+    "selectionPath",
+    "inputs",
+    "startedAt",
+    "durationNs",
+    "status",
+    "counts",
+    "scenarios"
+  ],
+  "properties": {
+    "apiVersion": {
+      "const": "dynamo/v1alpha1"
+    },
+    "kind": {
+      "const": "TestRunReport"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "selectionPath": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "durationNs": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "status": {
+      "enum": [
+        "running",
+        "passed",
+        "failed",
+        "error",
+        "cancelled"
+      ]
+    },
+    "reasonCode": {
+      "type": "string"
+    },
+    "exitCode": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total",
+        "pending",
+        "running",
+        "passed",
+        "failed",
+        "error",
+        "cancelled",
+        "skipped"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pending": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "running": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "passed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "error": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cancelled": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skipped": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourcePath",
+          "name",
+          "suitePaths",
+          "durationNs",
+          "status",
+          "steps",
+          "cleanup"
+        ],
+        "properties": {
+          "sourcePath": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "suitePaths": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "sessionId": {
+            "type": "string"
+          },
+          "artifactPath": {
+            "type": "string"
+          },
+          "startedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "durationNs": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "status": {
+            "enum": [
+              "pending",
+              "running",
+              "passed",
+              "failed",
+              "error",
+              "cancelled",
+              "skipped"
+            ]
+          },
+          "reasonCode": {
+            "type": "string"
+          },
+          "steps": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 100,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "operation",
+                "durationNs",
+                "outcome"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "operation": {
+                  "enum": [
+                    "create",
+                    "update",
+                    "delete",
+                    "assert"
+                  ]
+                },
+                "durationNs": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "outcome": {
+                  "enum": [
+                    "pending",
+                    "running",
+                    "passed",
+                    "failed",
+                    "error",
+                    "cancelled",
+                    "skipped"
+                  ]
+                },
+                "reasonCode": {
+                  "type": "string"
+                },
+                "requestIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "maxItems": 2
+                },
+                "sampleCount": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          },
+          "cleanup": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "outcome",
+              "durationNs"
+            ],
+            "properties": {
+              "outcome": {
+                "enum": [
+                  "notStarted",
+                  "passed",
+                  "error"
+                ]
+              },
+              "reasonCode": {
+                "type": "string"
+              },
+              "durationNs": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "running"
+          }
+        }
+      },
+      "then": {
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "exitCode"
+              ]
+            },
+            {
+              "required": [
+                "endedAt"
+              ]
+            }
+          ]
+        }
+      },
+      "else": {
+        "required": [
+          "exitCode",
+          "endedAt"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+/state/
+/dynamo
+/coverage.out
+__pycache__/
+*.pyc
+/evidence/
+/dist/
+/.agents/
+/.keybow/
+/.env
+/.env.*
+/secrets/
+/credentials/
+/kubeconfig
+/manual-workspaces/
+/examples/agent-smoke/operator-src/operator
+/examples/agent-smoke/operator-src/.operator-*
+# Local generated exports and operator probe artifacts remain outside sharing.
+/dynamo.*
+/.cache/
+/go-cache/
+
+# Private development history and environment-bound investigation material.
+/AGENTS.md
+/specs/
+/manual-*/
+/share/
+/docs/*
+!/docs/test-run-report.schema.json
+/scripts/*
+!/scripts/check.sh
+!/scripts/prepare-agent-smoke.sh
+!/scripts/agent-smoke.py
+!/scripts/deploy-source.py
+!/scripts/audit-git.py
+!/scripts/source-safety.py
+/test/*
+!/test/agent-smoke/
+!/test/reports/
+!/test/fixture/
+!/test/publication/
+/test/fixture/*
+!/test/fixture/Dockerfile
+!/test/fixture/cronjob-crd.yaml
+!/test/fixture/probe-crd.yaml
+# These historical tagged tests require excluded local integration harnesses.
+/internal/app/compatibility_test.go
+/internal/app/testmode_integration_test.go
+/internal/kubeapi/live_test.go
+/internal/operatorruntime/workflow_integration_test.go
+/internal/operatorruntime/context_integration_test.go
+# Historical local endpoint investigations; not part of supported clone workflow.
+/test/agent-smoke/bind_race.py
+/test/agent-smoke/feedback.py

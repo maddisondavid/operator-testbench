@@ -1,0 +1,9 @@
+.git
+.agents
+specs
+docs
+state
+*.log
+evidence
+scripts
+test

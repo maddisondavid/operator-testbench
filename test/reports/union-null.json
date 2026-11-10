@@ -1,0 +1,161 @@
+{
+  "apiVersion": "dynamo/v1alpha1",
+  "kind": "TestRunReport",
+  "runId": "ALJQEPQT5PZIZRPFXXUS3U6GCQ",
+  "selectionPath": "tests",
+  "inputs": [
+    {
+      "path": "config/operator.yaml",
+      "sha256": "d2ef248d23fbe28ca1b6b9d77745f5cb3077d7e2c0945bcc282740923196c8f5"
+    },
+    {
+      "path": "inputs/settings.txt",
+      "sha256": "2fb0bb18ed7e225024ed45b2347a6c0d4f2526f3b702a2fd385e93f555e116d7"
+    },
+    {
+      "path": "operator-src/Dockerfile",
+      "sha256": "c33ee054f4650a4e1285a241163a06430acde02479fbc66595abd89ff9683cd6"
+    },
+    {
+      "path": "operator-src/operator",
+      "sha256": "bddaaac938e5354ecb501107b1f04b869dde82af003a91949ad838d76d844215"
+    },
+    {
+      "path": "resources/cronjob.yaml",
+      "sha256": "9ead6b38dd0d282c8bc3ece76737dcae0e573b81213088054cb54644db5086ed"
+    },
+    {
+      "path": "tests/first/cronjob.yaml",
+      "sha256": "2f6da94d941e1f04c4adeabfdd34c68727bef81adcd22b52e7594805dc7c663a"
+    },
+    {
+      "path": "tests/first/scenario.yaml",
+      "sha256": "5c5fa1c21e3c35319ad0ce618556cc9e135342611d730854bc2ce4c83d1a124c"
+    },
+    {
+      "path": "tests/second/cronjob.yaml",
+      "sha256": "2f6da94d941e1f04c4adeabfdd34c68727bef81adcd22b52e7594805dc7c663a"
+    },
+    {
+      "path": "tests/second/scenario.yaml",
+      "sha256": "5c5fa1c21e3c35319ad0ce618556cc9e135342611d730854bc2ce4c83d1a124c"
+    },
+    {
+      "path": "tests/suite.yaml",
+      "sha256": "86a705813fd52abffad852a0a3ca31549898a779550f7330eafb0ee8dbde6bd4"
+    }
+  ],
+  "startedAt": "2036-10-25T13:57:05.073055149Z",
+  "endedAt": "2036-10-25T13:57:11.215625825Z",
+  "durationNs": 6142563506,
+  "status": "passed",
+  "exitCode": 0,
+  "counts": {
+    "cancelled": 0,
+    "error": 0,
+    "failed": 0,
+    "passed": 2,
+    "pending": 0,
+    "running": 0,
+    "skipped": 0,
+    "total": 2
+  },
+  "scenarios": [
+    {
+      "sourcePath": "tests/first/scenario.yaml",
+      "name": "reconciliation",
+      "suitePaths": null,
+      "sessionId": "6EE6IYFCPZVLLATZQXQKTARZKJ",
+      "artifactPath": "sessions/6EE6IYFCPZVLLATZQXQKTARZKJ",
+      "startedAt": "2036-10-25T13:57:08.34835932Z",
+      "endedAt": "2036-10-25T13:57:08.34835932Z",
+      "durationNs": 3254910597,
+      "status": "passed",
+      "steps": [
+        {
+          "id": "create",
+          "operation": "create",
+          "durationNs": 6262020,
+          "outcome": "passed",
+          "requestIds": [
+            "ZXBVJORXD4CSSYNN5IQ5UY4GBX"
+          ]
+        },
+        {
+          "id": "job",
+          "operation": "assert",
+          "durationNs": 622709448,
+          "outcome": "passed",
+          "requestIds": [
+            "FMRGPW37LY65MOBXGAO476O6YL",
+            "LOR5TG4Q4NQELTQLFZUMB6YPEA"
+          ],
+          "sampleCount": 7
+        },
+        {
+          "id": "status",
+          "operation": "assert",
+          "durationNs": 3429495,
+          "outcome": "passed",
+          "requestIds": [
+            "KZMOKPK7FUB5MJH6ERDASM2FHR"
+          ],
+          "sampleCount": 1
+        }
+      ],
+      "cleanup": {
+        "outcome": "passed",
+        "durationNs": 230330397
+      }
+    },
+    {
+      "sourcePath": "tests/second/scenario.yaml",
+      "name": "reconciliation",
+      "suitePaths": [
+        "tests/suite.yaml"
+      ],
+      "sessionId": "7GRKMF2O7DBAHCHCJAVJKATMIG",
+      "artifactPath": "sessions/7GRKMF2O7DBAHCHCJAVJKATMIG",
+      "startedAt": "2036-10-25T13:57:11.213848775Z",
+      "endedAt": "2036-10-25T13:57:11.213848775Z",
+      "durationNs": 2864109829,
+      "status": "passed",
+      "steps": [
+        {
+          "id": "create",
+          "operation": "create",
+          "durationNs": 3031423,
+          "outcome": "passed",
+          "requestIds": [
+            "NPACKM6PMSI5VUC75MD4WUO4OG"
+          ]
+        },
+        {
+          "id": "job",
+          "operation": "assert",
+          "durationNs": 724517626,
+          "outcome": "passed",
+          "requestIds": [
+            "ZRF3P7E7AW3MHNMWYSC65ZTBK7",
+            "ILNY2GD3DGFI3BBRZOEIIEKAOW"
+          ],
+          "sampleCount": 8
+        },
+        {
+          "id": "status",
+          "operation": "assert",
+          "durationNs": 1264583,
+          "outcome": "passed",
+          "requestIds": [
+            "4CKDY7TPY63C6JMVG5WVRTJNAF"
+          ],
+          "sampleCount": 1
+        }
+      ],
+      "cleanup": {
+        "outcome": "passed",
+        "durationNs": 197773029
+      }
+    }
+  ]
+}
